@@ -2,7 +2,7 @@
 Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
   s.name        = 'gaku_nested_forms'
-  s.version     = '0.0.1'
+  s.version     = '0.0.2'
   s.summary     = 'Gaku Nested Forms'
   s.description = ''
   s.required_ruby_version = '>= 1.8.7'
