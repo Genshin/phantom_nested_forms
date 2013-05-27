@@ -12,11 +12,11 @@ formBuilder =
     element.parent().find('span.help-inline').remove()
     element.data "valid", true
 
-window.ClientSideValidations.formBuilders["GakuNestedForms::FormBuilders::ValidateNestedFormBuilder"] = formBuilder
+window.Rails4ClientSideValidations.formBuilders["GakuNestedForms::FormBuilders::ValidateNestedFormBuilder"] = formBuilder
 
 $ ->
 
-  window.ClientSideValidations.callbacks.element.fail = (element, message, callback) ->
+  window.Rails4ClientSideValidations.callbacks.element.fail = (element, message, callback) ->
     callback()
     if element.data("valid") isnt false
       element.parent().parent().addClass "error"
