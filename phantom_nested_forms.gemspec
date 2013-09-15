@@ -5,6 +5,7 @@ Gem::Specification.new do |s|
   s.version     = '0.1.0'
   s.summary     = 'Phantom Nested Forms'
   s.description = 'rails helpers for bootstrap 3'
+  s.licenses = ['GNU GPL-3', 'AGPL-3']
   s.required_ruby_version = '>= 1.8.7'
 
   s.author            = ['Vassil Kalkov', 'Rei Kagetsuki', 'Nakaya Yukiharu']
