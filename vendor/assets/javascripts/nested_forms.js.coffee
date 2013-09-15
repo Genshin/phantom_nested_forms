@@ -12,7 +12,7 @@ formBuilder =
     element.parent().find('span.help-inline').remove()
     element.data "valid", true
 
-window.Rails4ClientSideValidations.formBuilders["GakuNestedForms::FormBuilders::ValidateNestedFormBuilder"] = formBuilder
+window.Rails4ClientSideValidations.formBuilders["PhantomNestedForms::FormBuilders::ValidateNestedFormBuilder"] = formBuilder
 
 $ ->
 
