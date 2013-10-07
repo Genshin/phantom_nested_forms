@@ -7,7 +7,7 @@ module PhantomNestedForms
       options[:html] = {:class => 'remote-form form'}
       options[:remote] = true
       content_tag :div, class: "row" do
-        content_tag :div, class: "span12 well" do
+        content_tag :div, class: "col-md-12 well" do
           nested_form_for(object, options, &block)
         end
       end
