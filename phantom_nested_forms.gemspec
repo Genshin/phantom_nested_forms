@@ -17,7 +17,7 @@ Gem::Specification.new do |s|
 
   s.require_path = 'lib'
   s.requirements << 'none'
-  s.add_dependency 'phantom_forms', '~> 0.1.0'
+  s.add_dependency 'phantom_forms', '0.2.0.alpha1'
   s.add_dependency 'nested_form'
   s.add_dependency 'rails4_client_side_validations'
 end
