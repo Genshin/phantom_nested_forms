@@ -2,7 +2,7 @@
 Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
   s.name        = 'phantom_nested_forms'
-  s.version     = '0.1.2'
+  s.version     = '0.2.0.alpha1'
   s.summary     = 'Phantom Nested Forms'
   s.description = 'rails helpers for bootstrap 3'
   s.licenses = ['GNU GPL-3', 'AGPL-3']
@@ -17,7 +17,7 @@ Gem::Specification.new do |s|
 
   s.require_path = 'lib'
   s.requirements << 'none'
-  s.add_dependency 'phantom_forms', '~> 0.1.0'
+  s.add_dependency 'phantom_forms', '0.2.0.alpha1'
   s.add_dependency 'nested_form'
   s.add_dependency 'rails4_client_side_validations'
 end
