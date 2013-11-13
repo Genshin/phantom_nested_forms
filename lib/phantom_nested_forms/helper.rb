@@ -6,10 +6,14 @@ module PhantomNestedForms
       options[:builder] = PhantomNestedForms::FormBuilders::ValidateNestedFormBuilder
       options[:html] = {:class => 'remote-form form'}
       options[:remote] = true
-      content_tag :div, class: "row" do
-        content_tag :div, class: "col-md-12 well" do
-          nested_form_for(object, options, &block)
-        end
+
+      object_name = get_class(extract_object(object))
+      object_class = options[:resource] ||  object_name
+      label = options[:label] || t("#{object_name.underscore}.singular")
+
+      content_tag :div, class: "panel panel-primary" do
+        concat(panel_title(label, slide_form_close_button(object_class))) unless label == 'nil'
+        concat(content_tag(:div, class: "panel-body") { nested_form_for(object, options, &block) })
       end
     end
 
