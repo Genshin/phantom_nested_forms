@@ -8,7 +8,7 @@ module PhantomNestedForms
       options[:remote] = true
 
       object_name = get_class(extract_object(object))
-      object_class = options[:resource] ||  object_name
+      object_class = options[:resource] || object_name
       label = options[:label] || t("#{object_name.underscore}.singular")
 
       content_tag :div, class: "panel panel-primary" do
@@ -24,7 +24,7 @@ module PhantomNestedForms
       options[:remote] = true
 
       object_name = get_class(extract_object(object))
-      object_class = options[:resource] ||  object_name
+      object_class = options[:resource] || object_name
       label = options[:label] || t("#{object_name.underscore}.singular")
 
       content_tag :div, class: "col-md-12 alert-dismissable" do
@@ -35,14 +35,13 @@ module PhantomNestedForms
       end
     end
 
-
     def normal_nested_form_for(object, options = {}, &block)
       options[:validate] = true
       options[:builder] = PhantomNestedForms::FormBuilders::ValidateNestedFormBuilder
       options[:html] = {:class => 'normal-form form'}
 
       object_name = get_class(extract_object(object))
-      object_class = options[:resource] ||  object_name
+      object_class = options[:resource] || object_name
       label = options[:label] || t("#{object_name.underscore}.singular")
 
       content_tag :div, class: "panel panel-primary" do
